@@ -1,0 +1,19 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "chra_test_modules_debugger",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "/home/odoo/odoo_src/odoo_19/odoo/odoo-bin",
+      "args": [
+        "--addons-path=/home/odoo/odoo_src/odoo_19/odoo/addons,/home/odoo/odoo_src/odoo_19/enterprise,/home/odoo/odoo_src/odoo_19/custom/chra_test_modules",
+        "--database=chra_test_jan_13",
+        "--limit-time-real=999999",
+        "-u",
+        "chra_sale",
+      ],
+      "console": "integratedTerminal"
+    }
+  ]
+}
