@@ -14,7 +14,9 @@
         This is a custom tutorial module for learning Odoo 18 development.
     """,
     "depends": ["sale_management"],
-    "data": [],
+    "data": [
+        "views/sale_order_views.xml",
+    ],
     "demo": [],
     "assets": {
         "web.assets_backend": [
