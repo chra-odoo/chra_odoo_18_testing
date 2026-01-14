@@ -1,0 +1,6 @@
+<templates>
+    <t t-name="chra_sale.Example" owl="1">
+        <p> Hello OWL! </p>
+        <button class="btn btn-primary">Click me!</button>
+    </t>
+</templates>
