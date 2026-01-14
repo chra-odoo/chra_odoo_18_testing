@@ -7,9 +7,10 @@
       "request": "launch",
       "program": "/home/odoo/odoo_src/odoo_18/odoo/odoo-bin",
       "args": [
-        "--addons-path=/home/odoo/odoo_src/odoo_18/odoo/addons,/home/odoo/odoo_src/odoo_18/enterprise,/home/odoo/odoo_src/odoo_18/custom/chra_test_modules",
+        "--addons-path=/home/odoo/odoo_src/odoo_18/odoo/addons,/home/odoo/odoo_src/odoo_18/enterprise,/home/odoo/odoo_src/odoo_18/design-themes,/home/odoo/odoo_src/odoo_18/custom/chra_test_modules",
         "--database=chra_test_odoo18_jan_13",
         "--limit-time-real=999999",
+        "--dev=all",
         "-u",
         "chra_sale",
       ],

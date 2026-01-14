@@ -5,16 +5,20 @@
       "path": "." 
     },
     {
-      "name": "Odoo 18 Community",
+      "name": "Odoo 18 Community (odoo)",
       "path": "/home/odoo/odoo_src/odoo_18/odoo"
     },
     {
-      "name": "Odoo 18 Enterprise",
+      "name": "Odoo 18 Enterprise (enterprise)",
       "path": "/home/odoo/odoo_src/odoo_18/enterprise"
     },
     {
-      "name": "Odoo 18 Documentation",
+      "name": "Odoo 18 Documentation (documentation)",
       "path": "/home/odoo/odoo_src/odoo_18/documentation"
+    },
+    {
+      "name": "Odoo 18 Design Themes (design-themes)",
+      "path": "/home/odoo/odoo_src/odoo_18/design-themes"
     }
   ],
   "settings": {
@@ -22,7 +26,8 @@
     "cursorpyright.analysis.extraPaths": [
       "/home/odoo/odoo_src/odoo_18/odoo",
       "/home/odoo/odoo_src/odoo_18/enterprise",
-      "/home/odoo/odoo_src/odoo_18/documentation"
+      "/home/odoo/odoo_src/odoo_18/documentation",
+      "/home/odoo/odoo_src/odoo_18/design-themes"
     ]
   }
 }
