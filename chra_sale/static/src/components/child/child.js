@@ -6,6 +6,7 @@ export class Child extends Component {
         title: { type: String },
         items: { type: Array },
         slots: { type: Object },
+        counter: { type: Number },
     };
 
     setup() {

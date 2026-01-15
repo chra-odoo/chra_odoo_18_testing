@@ -1,4 +1,4 @@
-import { Component } from "@odoo/owl";
+import { Component, useState } from "@odoo/owl";
 import { registry } from "@web/core/registry";
 import { standardWidgetProps } from "@web/views/widgets/standard_widget_props";
 import { Child } from "../child/child";
@@ -16,11 +16,22 @@ export class Example extends Component {
     // This method is called when the component is mounted.
     setup() {
         this.message = "Hello!";
+        this.state = useState({counter: 0});
     }
 
     // This method is called when the button is clicked.
     alertMessage() {
         alert(this.message);
+    }
+
+    incrementCounter() {
+        this.state.counter++;
+    }
+    decrementCounter() {
+        this.state.counter--;
+    }
+    resetCounter() {
+        this.state.counter = 0;
     }
 }
 

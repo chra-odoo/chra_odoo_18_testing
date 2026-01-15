@@ -2,7 +2,10 @@
     <t t-name="chra_sale.Example" owl="1">
         <p> Hello OWL! </p>
         <button t-on-click="alertMessage" class="btn btn-primary">Click me!</button>
-        <Child title="'Hello from Example!'" items="['Item 1', 'Item 2', 'Item 3']">
+        <button t-on-click="incrementCounter" class="btn btn-primary">Increment Counter</button>
+        <button t-on-click="decrementCounter" class="btn btn-primary">Decrement Counter</button>
+        <button t-on-click="resetCounter" class="btn btn-primary">Reset Counter</button>
+        <Child title="'Hello from Example!'" items="['Item 1', 'Item 2', 'Item 3']" counter="state.counter">
             <span slot="default">THIS IS A DEFAULT SLOT</span>
         </Child>
     </t>
