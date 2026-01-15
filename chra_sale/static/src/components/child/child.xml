@@ -1,5 +1,5 @@
 <templates>
     <t t-name="chra_sale.Child" owl="1">
-        <p><t t-out="props.title"/></p>
+        <p><t t-esc="props.title"/></p>
     </t>
 </templates>
