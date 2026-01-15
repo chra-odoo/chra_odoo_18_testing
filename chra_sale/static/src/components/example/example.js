@@ -12,6 +12,16 @@ export class Example extends Component {
         ...standardWidgetProps, // This includes the props for the standard widget
         "*": true, // Allow any additional props to be passed through
     };
+
+    // This method is called when the component is mounted.
+    setup() {
+        this.message = "Hello!";
+    }
+
+    // This method is called when the button is clicked.
+    alertMessage() {
+        alert(this.message);
+    }
 }
 
 registry.category("view_widgets").add("example", { component: Example });

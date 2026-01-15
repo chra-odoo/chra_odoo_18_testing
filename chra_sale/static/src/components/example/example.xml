@@ -1,7 +1,7 @@
 <templates>
     <t t-name="chra_sale.Example" owl="1">
         <p> Hello OWL! </p>
-        <button class="btn btn-primary">Click me!</button>
+        <button t-on-click="alertMessage" class="btn btn-primary">Click me!</button>
         <Child title="'Hello from Example!'" items="['Item 1', 'Item 2', 'Item 3']">
             <span slot="default">THIS IS A DEFAULT SLOT</span>
         </Child>
