@@ -2,7 +2,6 @@
     <t t-name="chra_sale.Example" owl="1">
         <p> Hello OWL! </p>
         <button class="btn btn-primary">Click me!</button>
-        <!-- Props are passed as JavaScript expressions, so we need to use quotes to pass a string. -->
-        <Child title="'Hello from Example!'" />
+        <Child title="'Hello from Example!'" items="['Item 1', 'Item 2', 'Item 3']" />
     </t>
 </templates>

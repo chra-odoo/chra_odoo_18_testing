@@ -1,5 +1,10 @@
 <templates>
     <t t-name="chra_sale.Child" owl="1">
         <p><t t-esc="props.title"/></p>
+        <ol>
+            <li t-foreach="props.items" t-as="item" t-key="item_index">
+                <t t-esc="'Index ' + item_index"/>: <t t-esc="item"/>
+            </li>
+        </ol>
     </t>
 </templates>
