@@ -8,5 +8,7 @@
                 <t t-esc="'Index ' + item_index"/>: <t t-esc="item"/>
             </li>
         </ol>
+        <button class="btn btn-primary m-5" t-on-click="focusMyInput">Focus My Input</button>
+        <input class="form-input input m-5" t-ref="myInput"/>
     </t>
 </templates>
