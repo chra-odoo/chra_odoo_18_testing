@@ -19,6 +19,10 @@
     {
       "name": "Odoo 18 Design Themes (design-themes)",
       "path": "/home/odoo/odoo_src/odoo_18/design-themes"
+    },
+    {
+      "name": "Odoo OWL Framework (owl)",
+      "path": "/home/odoo/odoo_src/odoo_18/owl"
     }
   ],
   "settings": {
@@ -27,7 +31,8 @@
       "/home/odoo/odoo_src/odoo_18/odoo",
       "/home/odoo/odoo_src/odoo_18/enterprise",
       "/home/odoo/odoo_src/odoo_18/documentation",
-      "/home/odoo/odoo_src/odoo_18/design-themes"
+      "/home/odoo/odoo_src/odoo_18/design-themes",
+      "/home/odoo/odoo_src/odoo_18/owl"
     ]
   }
 }
