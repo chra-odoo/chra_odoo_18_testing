@@ -22,6 +22,7 @@
         "web.assets_backend": [
             "chra_sale/static/src/components/**/*",
             "chra_sale/static/src/lib/**/*",
+            "chra_sale/static/src/core/web/**/*",
         ],
     },
 }

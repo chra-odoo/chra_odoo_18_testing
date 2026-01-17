@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+<!-- This template is used to extend the mail.SuggestedRecipients template (CRM Form view Chatter when sending a message) -->
+    <t t-name="mail.SuggestedRecipients" t-inherit="mail.SuggestedRecipients" t-inherit-mode="extension">
+        <xpath expr="//div" position="inside">
+            <span class="alert alert-info">This is a test for extending the mail.SuggestedRecipients template</span>
+        </xpath>
+    </t>
+</templates>
