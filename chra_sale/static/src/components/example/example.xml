@@ -8,5 +8,6 @@
         <Child title="'Hello from Example!'" items="['Item 1', 'Item 2', 'Item 3']" counter="state.counter">
             <span slot="default">THIS IS A DEFAULT SLOT</span>
         </Child>
+        <button t-on-click="createLead" class="btn btn-primary">Create Lead</button>
     </t>
 </templates>

@@ -1,5 +1,6 @@
 import { Component, useState, useSubEnv } from "@odoo/owl";
 import { registry } from "@web/core/registry";
+import { useService } from "@web/core/utils/hooks";
 import { standardWidgetProps } from "@web/views/widgets/standard_widget_props";
 import { Child } from "../child/child";
 
@@ -20,6 +21,7 @@ export class Example extends Component {
         });
         this.message = "Hello!";
         this.state = useState({counter: 0});
+        this.orm = useService("orm");
     }
 
     // This method is called when the button is clicked.
@@ -35,6 +37,19 @@ export class Example extends Component {
     }
     resetCounter() {
         this.state.counter = 0;
+    }
+
+    async createLead() {
+        const [leadId] = await this.orm.create("crm.lead", [{
+            name: "Lead 1",
+            email_from: "lead1@example.com",
+            phone: "1234567890",
+        }]);
+        console.log("Lead created with ID:", leadId);
+        
+        // To get the full lead object, read it back
+        const leads = await this.orm.read("crm.lead", [leadId], ["name", "email_from", "phone"]);
+        console.log("Lead object:", leads[0]);
     }
 }
 

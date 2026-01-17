@@ -13,7 +13,7 @@
         
         This is a custom tutorial module for learning Odoo 18 development.
     """,
-    "depends": ["sale_management"],
+    "depends": ["sale_management", "crm"],
     "data": [
         "views/sale_order_views.xml",
     ],
