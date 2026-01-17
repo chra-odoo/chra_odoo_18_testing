@@ -1,4 +1,4 @@
-import { Component, useState } from "@odoo/owl";
+import { Component, useState, useSubEnv } from "@odoo/owl";
 import { registry } from "@web/core/registry";
 import { standardWidgetProps } from "@web/views/widgets/standard_widget_props";
 import { Child } from "../child/child";
@@ -15,6 +15,9 @@ export class Example extends Component {
 
     // This method is called when the component is mounted.
     setup() {
+        useSubEnv({
+            data: 'info_from_subenv',
+        });
         this.message = "Hello!";
         this.state = useState({counter: 0});
     }
