@@ -29,10 +29,12 @@
     "python.defaultInterpreterPath": "/home/odoo/miniconda3/envs/odoo_18/bin/python",
     "cursorpyright.analysis.extraPaths": [
       "/home/odoo/odoo_src/odoo_18/odoo",
+      "/home/odoo/odoo_src/odoo_18/odoo/addons",
       "/home/odoo/odoo_src/odoo_18/enterprise",
       "/home/odoo/odoo_src/odoo_18/documentation",
       "/home/odoo/odoo_src/odoo_18/design-themes",
-      "/home/odoo/odoo_src/odoo_18/owl"
+      "/home/odoo/odoo_src/odoo_18/owl",
+      "/home/odoo/odoo_src/odoo_18/custom/chra_test_modules"
     ]
   }
 }
