@@ -2,7 +2,7 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "chra_test_modules_debugger",
+      "name": "Run chra_sale module",
       "type": "debugpy",
       "request": "launch",
       "program": "/home/odoo/odoo_src/odoo_18/odoo/odoo-bin",
@@ -10,11 +10,26 @@
         "--addons-path=/home/odoo/odoo_src/odoo_18/odoo/addons,/home/odoo/odoo_src/odoo_18/enterprise,/home/odoo/odoo_src/odoo_18/design-themes,/home/odoo/odoo_src/odoo_18/custom/chra_test_modules",
         "--database=chra_test_odoo18_jan_13",
         "--limit-time-real=999999",
-        "--dev=all",
+        "--dev=xml,qweb",
         "-u",
         "chra_sale",
       ],
       "console": "integratedTerminal"
-    }
+    },
+      {
+        "name": "Run chra_sale unittests",
+        "type": "debugpy",
+        "request": "launch",
+        "program": "/home/odoo/odoo_src/odoo_18/odoo/odoo-bin",
+        "args": [
+          "--addons-path=/home/odoo/odoo_src/odoo_18/odoo/addons,/home/odoo/odoo_src/odoo_18/enterprise,/home/odoo/odoo_src/odoo_18/design-themes,/home/odoo/odoo_src/odoo_18/custom/chra_test_modules",
+          "--database=chra_test_odoo18_jan_13",
+          "--test-tags=chra_sale",
+          "--stop-after-init", // there is no need to run the server after the tests are run
+          "--log-level=test"
+        ],
+        "console": "integratedTerminal",
+        "justMyCode": false
+      }
   ]
 }
